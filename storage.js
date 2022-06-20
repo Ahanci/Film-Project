@@ -31,7 +31,12 @@ Storage.prototype.deleteFilmFromStorage = function(filmTitle){
     
      films.forEach((film,index)=>{
 
-        films.splice(index,1);
+        if(film.title === filmTitle.trim()){
+
+            films.splice(index,1);
+
+        }
+
      });
     
 
