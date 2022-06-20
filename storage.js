@@ -46,3 +46,6 @@ Storage.prototype.deleteFilmFromStorage = function(filmTitle){
 
 
 }
+Storage.prototype.clearAllFilmsFromStorage= function(){
+    localStorage.removeItem('films');
+}

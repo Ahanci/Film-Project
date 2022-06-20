@@ -76,3 +76,25 @@ UI.prototype.deleteFilmFromUI= function(element){
     element.parentElement.parentElement.remove();
 }
 
+UI.prototype.clearAllFilmsFromUI= function(){
+
+    const filmList= document.getElementById("films");
+    
+    while(filmList.firstChild!== null){
+        filmList.firstChild.remove();
+    }
+    // filmList[0].remove();
+
+
+
+    // allFilms.forEach(function(allfilm){
+
+    //     allfilm.remove();
+
+
+    // })
+
+
+
+
+}
